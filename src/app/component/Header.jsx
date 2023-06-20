@@ -5,11 +5,11 @@ import Link from "next/link"
 import HeaderLogo from '../../../public/images/header_logo.png';
 
 export default function Header() {
-    const contents = [ {content:"home", link:"/"},{content:"about", link:"/#about"}, {content:"works", link:"/#works"}, {content:"skills", link:"/#skills"},{content:"contact", link:"/#contact"},]
+    const contents = [ {content:"home", link:"/"},{content:"about", link:"/#about"}, {content:"works", link:"/#works"}, {content:"skills", link:"/#skills"},{content:"resume", link:"/#resume"},]
     // console.log(contents)
     return(
         <>
-        <header className="header-wrapper h-[100px]  px-4 flex shadow">
+        <header className="header-wrapper h-[100px] px-4 flex shadow fixed w-full top-0 z-10 backdrop-blur-sm bg-white/30">
                 <div className='h-full flex items-center'>
                     <Image 
                         src={HeaderLogo}

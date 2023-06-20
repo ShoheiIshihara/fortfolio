@@ -1,15 +1,17 @@
 import Image from 'next/image';
 
-export default function About() {
+export default function Resume() {
   return (
     <>
-        <div id='about' className='w-full mt-[200px] md:mt-[300px] my-24 whitespace-normal'>
-            <h1 className='w-full text-center justify-center items-center text-4xl font-bold text-shadow-md'>
-                <p className='text-[100px] md:text-[200px]  font-bold text-gray-200 text-shadow-none text-center'>ABOUT</p>
-                <span className='z-10 text-4xl tracking-widest'>ABOUT</span>
-            </h1>
-           
-           <div className='mt-20 mx-8 md:m-[100px] col-span-3 flex'>
+        <div id='resume' className='mt-[300px]'>
+          <h1 className='text-center justify-center items-center text-4xl font-bold text-shadow-md'>
+              <p className='text-[80px] md:text-[200px] text-center  font-bold text-gray-200 text-shadow-none md:text-right'>RESUME</p>
+              <span className='z-10 text-4xl tracking-widest'>経歴</span>
+          </h1>
+          
+           <div id='about' className='w-full h-auto my-24 md:grid grid-cols-4 whitespace-normal'>
+           <h1 className='flex justify-center items-center text-4xl font-bold text-shadow-md'>ABOUT</h1>
+           <div className='mt-20 mx-8 md:m-[40px] col-span-3 flex'>
                 <div className=''>
                     <h2 className='tracking-[.25em] text-4xl text-center md:text-left '>石原翔平<span className='text-lg ml-4 text-gray-400 '>ISHIHARA SHOHEI</span></h2>
                     <div className='flex mt-8'>
@@ -24,6 +26,7 @@ export default function About() {
                             <p className='mt-[20px]'>
                                 1987年5月28日生まれ。宮崎県小林市出身。<br />
                                 都城工業高等専門学校電気情報工学科卒。<br />
+                                2008年より株式会社NTTネオメイトに入社。
                             </p>
                             <p className='mt-[20px]'>
                                 電気通信設備事業における事業企画及び工事管理を
@@ -50,6 +53,7 @@ export default function About() {
             </div>
                    
             </div>
+        </div>
         </div>
     </>
   )

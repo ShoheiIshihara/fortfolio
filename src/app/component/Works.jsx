@@ -9,26 +9,25 @@ export default function Works() {
   return (
     <>
 
-        <div id='works' className='w-full h-auto mt-40 whitespace-normal z-10'>
+        <div id='works' className='w-full h-auto mt-[150px] md:mt-[300px] whitespace-normal  '>
 
            <h1 className='text-center justify-center items-center text-4xl font-bold text-shadow-md'>
-                <p className='text-[200px] font-bold text-gray-200 text-shadow-none text-left'>WORKS</p>
+                <p className='text-[100px] md:text-[200px]  font-bold text-gray-200 text-shadow-none text-left'>WORKS</p>
                 <span className='z-10 text-4xl tracking-widest'>制作物</span>
-
             </h1>
 
-            <div className='grid grid-cols-2 gap-10 mx-10 my-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 mx-10 my-10'>
                 {/* 一つ目 */}
-                <div className=' p-10 rounded'>
+                <div className=' md:p-10 py-4 rounded'>
                     <label htmlFor="works001" className="">
-                        <div className="card shadow-lg hover:scale-105 transition duration-500 hover:shadow-2xl hover:blur-sm">
+                        <div className="card border shadow-lg hover:scale-105 transition duration-500 hover:shadow-2xl hover:blur-sm">
                             <Image 
                                 src={PortfolioImage1}
                                 alt='PortfolioImage1'
-                                className=' '
+                                className='rounded-t-lg border-b '
                             />  
                             <div className="card-body">
-                                <h2 className="card-title">占い鑑定支援WEBツール</h2>
+                                <h2 className="text-center">占い鑑定支援WEBツール</h2>
                             </div>
                         </div>
                     </label>
@@ -44,16 +43,16 @@ export default function Works() {
                     </div>
                 </div>
                   {/* 二つ目 */}
-                  <div className=' p-10 rounded'>
+                  <div className=' md:p-10 py-4 rounded'>
                     <label htmlFor="works002" className="">
-                        <div className="card shadow-lg hover:scale-105 transition duration-500 hover:shadow-2xl hover:blur-sm">
+                        <div className="card border shadow-lg hover:scale-105 transition duration-500 hover:shadow-2xl hover:blur-sm">
                             <Image 
                                 src={PortfolioImage2}
                                 alt='PortfolioImage2'
-                                className=' '
+                                className='rounded-t-lg '
                             />  
                             <div className="card-body">
-                                <h2 className="card-title">飲食店　WEBページ制作</h2>
+                                <h2 className="text-center">飲食店　WEBページ</h2>
                             </div>
                         </div>
                     </label>
