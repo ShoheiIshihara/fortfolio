@@ -47,8 +47,8 @@ export default function Skills() {
             <div className='md:mt-[150px] mt-[50px]  text-center md:text-left'>
                 <div>
                     <h3 className='text-2xl text-center mb-4'>WEBプログラミングスキル</h3>
-                    <div className='w-full'>
-                        <div className="carousel max-w-full p-4 rounded-box">
+                    <div className='w-full '>
+                        <div className="carousel max-w-full mx-auto p-4 rounded-box ">
                         {webProgramingBasicSkills.map((skill, key)=>{
                         return(
                             <>

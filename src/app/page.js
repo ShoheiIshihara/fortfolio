@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <>
       <Header />
+        <p className='text-center mt-[150px]'>This page is Shohei&#39;s Portfolio Site</p>
         <About />
         <Works />
         <Skills />
