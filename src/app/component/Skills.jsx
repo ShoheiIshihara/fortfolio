@@ -28,25 +28,25 @@ export default function Skills() {
     ];
 
     const portableSkills = [
-        { id:'infomation', name:'情報収集力', id:'infomation',rate:4, text:'自身が所属している部署だけでなく、他部署や顧客等の情報を収集し、自社に与える影響を多角的に分析できる' },
-        { id:'issue', name:'課題設定力',rate:4,text:'収集した情報を基に、自らTo-Beを考えAs-Isとの差分（課題）を把握し、必要な改善策や解決策を設定できる' },
-        { id:'plan', name:'計画力',rate:4, text:'他部署にも影響を与えるような計画・戦略を立案できる' },
-        { id:'execution', name:'遂行力',rate:4, text:'既存の方法だけに囚われず、計画を達成するために必要に応じて新しい方法を考案して進めることができる' },
-        { id:'response', name:'対応力',rate:4, text:'トラブルが発生した場合においても目標の完遂に向けて、どうすればできるかを考え実行することができる' },
-        { id:'communication', name:'コミュニケーション能力',rate:4, text:'誰とでも分け隔てなくコミュニケーションを取ることができ、相手の意見をしっかり聞き、合意形成のためだけでなく新たな価値を生み出すためのコミュニケーションを行うことができる' },
-        { id:'management', name:'マネジメント能力',rate:4, text:'キャリアプランをふまえた指導・育成を行うことができる' },
+        { id:'infomation', name:'情報収集力', id:'infomation',rate:5, text:'自身が所属している部署だけでなく、他部署や顧客等の情報を収集し、自社に与える影響を多角的に分析できる' },
+        { id:'issue', name:'課題設定力',rate:5,text:'収集した情報を基に、自らTo-Beを考えAs-Isとの差分（課題）を把握し、必要な改善策や解決策を設定できる' },
+        { id:'plan', name:'計画力',rate:5, text:'他部署にも影響を与えるような計画・戦略を立案できる' },
+        { id:'execution', name:'遂行力',rate:5, text:'既存の方法だけに囚われず、計画を達成するために必要に応じて新しい方法を考案して進めることができる' },
+        { id:'response', name:'対応力',rate:5, text:'トラブルが発生した場合においても目標の完遂に向けて、どうすればできるかを考え実行することができる' },
+        { id:'communication', name:'コミュニケーション能力',rate:5, text:'誰とでも分け隔てなくコミュニケーションを取ることができ、相手の意見をしっかり聞き、合意形成のためだけでなく新たな価値を生み出すためのコミュニケーションを行うことができる' },
+        { id:'management', name:'マネジメント能力',rate:5, text:'キャリアプランをふまえた指導・育成を行うことができる' },
     ]
 
   return (
     <>
-        <div className='skills w-full px-4 mt-[150px] md:mt-[300px]' id='skills'>
+        <div className='skills w-full px-4 pt-[150px] pd:mt-[300px]' id='skills'>
             <h1 className='text-center justify-center items-center text-4xl font-bold text-shadow-md'>
                 <p className='text-[100px] md:text-[200px] font-bold text-gray-200 text-shadow-none text-center'>SKILLS</p>
                 <span className='z-10 text-4xl tracking-widest'>スキル</span>
             </h1>
             <div className='md:mt-[150px] mt-[50px]  text-center md:text-left'>
                 <div>
-                    <h3 className='text-2xl text-center mb-4'>WEBプログラミングスキル</h3>
+                    <h3 className='text-2xl text-center mb-4'>プログラミングスキル</h3>
                     <div className='w-full '>
                         <div className="carousel max-w-full mx-auto p-4 rounded-box ">
                         {webProgramingBasicSkills.map((skill, key)=>{

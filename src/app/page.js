@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import About from './component/About';
 import Works from './component/Works';
 import Skills from './component/Skills';
@@ -9,11 +8,13 @@ export default function Home() {
   return (
     <>
       <Header />
-        <p className='text-center mt-[150px]'>This page is Shohei&#39;s Portfolio Site</p>
-        <About />
-        <Works />
-        <Skills />
-        <Resume />
+        <div id='top'>
+          <p className='text-center pt-[150px] w-full'>This page is Shohei&#39;s Portfolio Site</p>
+          <About />
+          <Works />
+          <Skills />
+          <Resume />
+        </div>
       <Footer />
     </>
   )

@@ -11,14 +11,14 @@ export default function Works() {
   return (
     <>
 
-        <div id='works' className='w-full mt-[150px] md:mt-[300px] whitespace-normal  '>
+        <div id='works' className='w-full pt-[150px] pd:mt-[300px] whitespace-normal  '>
 
            <h1 className='text-center justify-center items-center text-4xl font-bold text-shadow-md'>
-                <p className='text-[100px] md:text-[200px]  font-bold text-gray-200 text-shadow-none text-left'>WORKS</p>
+                <p className='text-[100px] md:text-[200px]  font-bold text-gray-200 text-shadow-none md:text-left'>WORKS</p>
                 <span className='z-10 text-4xl tracking-widest'>制作物</span>
             </h1>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-10 mt-[100px]'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-10 mt-[50px] md:mt-[100px]'>
                 {portfolios.map((portfolio, key)=>{
                     return(
                         <>
@@ -41,8 +41,9 @@ export default function Works() {
                             <div className="modal ">
                                 <div className="modal-box text-center mx-2">
                                     <h3 className="text-lg font-bold my-4">{portfolio.productName}</h3>
-                                    <p className="py-4 text-left indent-4 ">{portfolio.note}</p>
-                                    <p className="pb-4">仕様言語<br/>{portfolio.tech}</p>
+                                    <p className="py-4">仕様言語<br/>{portfolio.tech}</p>
+                                    <p className="pb-4">制作期間：{portfolio.period}</p>
+                                    <p className="pb-4 text-left indent-4 ">{portfolio.note}</p>
                                     <div>
                                         <a className="link link-primary " href={portfolio.url} target="_blank" rel="noopener noreferrer">サイト</a>
                                     </div>
@@ -53,7 +54,7 @@ export default function Works() {
                                     <label htmlFor={portfolio.id} className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
 
                                 </div>
-                                <label className="modal-backdrop" htmlFor="works001">Close</label>
+                                <label className="modal-backdrop" htmlFor={portfolio.id}>Close</label>
                             </div>
                         </div>
                         </>
