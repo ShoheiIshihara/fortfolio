@@ -6,7 +6,7 @@ export default function Works() {
     const portfolios = [
         {id:'portfolio001', productName:'占い鑑定支援WEBツール', image:'/images/protfolio001.png', gitHub:'https://github.com/ShoheiIshihara/sanmei_aplication', url:'https://sanmei-application.com/', period:"2 months", tech:'REACT(front) Laravel(back) Tailwindcss MySQL', note:'デザイン作成、要件定義、コーディング、デプロイまで実施。被鑑定者の生年月日をDBに登録後、リストから選択することで占い結果を算出でき、結果を画像出力できる仕様。xserverにデプロイし運用。'},
         {id:'portfolio002', productName:'飲食店WEBページ', image:'/images/protfolio002.png', gitHub:'https://github.com/ShoheiIshihara/usagi', url:'https://usagi-shoheiishihara.vercel.app/', period:"1 months", tech:'NEXTjs Tailwindcss MySQL', note:'レイアウトや掲載内容などデザインから素材撮影、コーディングまで実施。イベント情報をDBから取得し表示'},
-        {id:'portfolio003', productName:'ポートフォリオサイト', image:'/images/protfolio003.png', gitHub:'https://github.com/ShoheiIshihara/fortfolio', url:'', period:"1 weeks", tech:'NEXTjs Tailwindcss', note:''},
+        {id:'portfolio003', productName:'ポートフォリオサイト', image:'/images/protfolio003.png', gitHub:'https://github.com/ShoheiIshihara/fortfolio', url:'https://portfolio-shoheiishihara.vercel.app/', period:"1 weeks", tech:'NEXTjs Tailwindcss', note:''},
     ]
   return (
     <>
@@ -22,7 +22,7 @@ export default function Works() {
                 {portfolios.map((portfolio, key)=>{
                     return(
                         <>
-                        <div className=' md:p-10 py-4 rounded w-[300px] md:w-96 mx-auto' key={key}>
+                        <div className=' md:p-6 py-4 rounded min-w-[300px]  md:max-w-[500px] mx-auto' key={key}>
                             <label htmlFor={portfolio.id} className="">
                                 <div className="card border shadow-lg hover:scale-105 transition duration-500 hover:shadow-2xl hover:blur-sm">
                                     <Image 

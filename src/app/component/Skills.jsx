@@ -107,7 +107,6 @@ export default function Skills() {
                     <div className='w-full'>
                         <div className="carousel  max-w-full p-4  rounded-box">
                         {elseProgramingSkills.map((skill, key)=>{
-                            const rating = skill.rate == (key+1) ? '':"checked";
                             return(
                                 <>
                                  <div className='carousel-item w-[200px] mx-1' key={key} >
@@ -149,7 +148,6 @@ export default function Skills() {
                 <div className='w-full'>
                     <div className="carousel  max-w-full p-4  rounded-box">
                     {portableSkills.map((skill, key)=>{
-                        const rating = skill.rate == (key+1) ? '':"checked";
                         return(<>
                               <div className='carousel-item w-[200px] mx-1' key={key} >
                                 <div className="card w-96  shadow-xl  border hover:scale-110 transition duration-200 hover:shadow-2xl">

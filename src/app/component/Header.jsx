@@ -23,7 +23,7 @@ export default function Header() {
                 <ul className="h-full flex justify-end items-center text-shadow">
                     {contents.map((value,key)=>{
                         return (
-                            <Link href={value.link}  key={key} scroll={true}>
+                            <Link href={value.link}  key={key} >
                                 <li className="mx-4 tracking-widest font-semibold hover:text-gray-300 hover:border-b hover:border-gray-400 duration-500 drop-shadow-md">
                                     {value.content}
                                 </li>
@@ -47,7 +47,7 @@ export default function Header() {
                     <ul className="h-full text-shadow mt-[200px]">
                         {contents.map((value,key)=>{
                             return (
-                                <Link href={value.link}  key={key} scroll={true} onClick={()=>{setNavIsOpen(!navIsOpen)}}>
+                                <Link href={value.link}  key={key}  onClick={()=>{setNavIsOpen(!navIsOpen)}}>
                                     <li className="mx-4 my-5 text-lg tracking-widest font-semibold hover:text-gray-300 hover:border-b hover:border-gray-400 duration-500 drop-shadow-md">
                                         {value.content}
                                     </li>
