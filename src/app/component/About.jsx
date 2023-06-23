@@ -28,7 +28,7 @@ export default function About() {
                                         趣味はキャンプ、テニス。
                                     </p>
                                     <p className='mt-[4px]'>
-                                        自称ガジェットおたく。<br/>VRやジェネレーティブAIなど新技術に興味津々
+                                        自称ガジェットおたく。<br/>常にIT新技術に興味津々（現在はジェネレーティブAIなど）
                                     </p>
                                 </div>
                             </div>
@@ -42,7 +42,7 @@ export default function About() {
 
                             <p className='mt-[32px]'>
                                 ITを用いて便利な世の中にすることで人々の役に立ちたいという思いが強くなり<br />IT業界の道を志す。
-                                将来プロマネを目指し、絶賛勉強中
+                                将来ITコンサルを目指し、絶賛勉強中
                             </p>
                         </div>
                         
